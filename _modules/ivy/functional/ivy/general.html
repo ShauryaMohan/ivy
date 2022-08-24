@@ -1905,12 +1905,14 @@
 <span class="sd">    ivy.array([1, 2, 3])</span>
 
 <span class="sd">    &gt;&gt;&gt; x = lambda a, b: a + b</span>
-<span class="sd">    &gt;&gt;&gt; y = ivy.default(x, lambda: ivy.array([1, 2, 3]), with_callable=True, catch_exceptions=True)</span>
+<span class="sd">    &gt;&gt;&gt; y = ivy.default(x, lambda: ivy.array([1, 2, 3]), with_callable=True,\</span>
+<span class="sd">                        catch_exceptions=True)</span>
 <span class="sd">    &gt;&gt;&gt; print(y)</span>
 <span class="sd">    ivy.array([1, 2, 3])</span>
 
 <span class="sd">    &gt;&gt;&gt; x = lambda a, b: a + b</span>
-<span class="sd">    &gt;&gt;&gt; y = ivy.default(x, lambda: ivy.array([1, 2, 3]), with_callable=True, catch_exceptions=True, rev=True)</span>
+<span class="sd">    &gt;&gt;&gt; y = ivy.default(x, lambda: ivy.array([1, 2, 3]), with_callable=True,\</span>
+<span class="sd">                        catch_exceptions=True, rev=True)</span>
 <span class="sd">    &gt;&gt;&gt; print(y)</span>
 <span class="sd">    ivy.array([1, 2, 3])</span>
 
